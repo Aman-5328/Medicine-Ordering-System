@@ -80,7 +80,7 @@ class Checkout extends React.Component {
                 ))}
 
               <tr>
-                  <td><input type="text" value={discountCoupnInput} onChange={(e) =>{
+                  <td><b>Discount coupon: </b><input type="text" value={discountCoupnInput} onChange={(e) =>{
                     this.setState({
                       discountCoupnInput: e.target.value
                     })

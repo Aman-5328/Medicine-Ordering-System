@@ -54,6 +54,11 @@ export default class Routes extends Component {
         })
     }
 
+    removeCart=()=>{
+        this.setState({cartValue:[]})
+        localStorage.clear();
+    }
+
 
     render() {
         const {cartValue} = this.state
@@ -64,7 +69,7 @@ export default class Routes extends Component {
                 <Headers cartValue={cartValue}/>
                     <Switch>
                         <Route exact path="/" render={(props) => <Landing addToCart={this.addToCart} {...props}/>} />
-                        <Route exact path="/thankyou" component={Thankyou}/>
+                        <Route exact path="/thankyou" render={(props) => <Thankyou removeCart={this.removeCart} cartValue={cartValue} {...props}/>} />
                         <Route exact path="/checkout" render={(props) => <Checkout deleteToCart={this.deleteToCart} addToCart={this.addToCart} cartValue={cartValue} {...props}/>} />
                     </Switch>
                     <Footers />
