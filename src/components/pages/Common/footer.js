@@ -1,8 +1,7 @@
 import React from 'react';
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-class Footer extends React.Component {
-  render() {
+const Footer = () => {
     return (
       <footer>
         <footer id="footer">
@@ -12,7 +11,7 @@ class Footer extends React.Component {
                 <div className="col-sm-12">
                   <ul className="terms-privacy">
                     <li><Link to="/">Terms of Use</Link> </li>
-                    <li><Link to="/">Privacy Policy </Link> </li>
+                    <li><Link to="/">Privecy Policy </Link> </li>
                     <li><Link to="/">Disclaimer</Link> </li>
                   </ul>
                 </div>
@@ -28,6 +27,5 @@ class Footer extends React.Component {
       </footer>
     );
   }
-}
 
 export default Footer;

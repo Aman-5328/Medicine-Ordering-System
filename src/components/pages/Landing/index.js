@@ -1,10 +1,8 @@
 import React from 'react';
 import { products } from '../../../utils/const.js'
 
-class Landing extends React.Component {
-    
-    render() {
-        const { addToCart } = this.props;
+const Landing = (props) => {
+        const { addToCart } = props;
         return (
             <section className="main-wrapper">
                 <div className="container">
@@ -29,6 +27,4 @@ class Landing extends React.Component {
             </section>
         );
     }
-}
-
 export default Landing;
