@@ -40,6 +40,7 @@ export default class Routes extends Component {
             cartValue
         }, () => {
             localStorage.setItem('cartValue',JSON.stringify( cartValue))
+            toast.success("Item added Successfully");
         })
     }
 
