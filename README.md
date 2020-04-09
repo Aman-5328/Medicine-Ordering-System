@@ -66,3 +66,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Project Description
+
+1) The application is about ordering the medicine online.
+2) First screen you will see is the landing page.
+3) On landing page you will see the list of medicines along with its image, price, name and add to cart button
+4) While click on add to cart button,item will added into the cart.
+5) Click on cart button or checkout tab, you will be redirected to checkout page and here you can see all items you have added along with their quantity and total.You can also change the quantity.
+6) Below is the discount coupon option. I have created 2 coupons "zomato30" and "zomato50" which gives 30 percent and 50 % discount.
+7) You can also remove the coupon.
+8) On click of "pay by cash" button, you will be redirected to thankyou page and cart will clear. 
