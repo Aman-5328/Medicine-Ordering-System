@@ -1,3 +1,13 @@
+/**
+     * 
+     * @name Landing Page
+     *
+     * @description
+     * This is the landing page which opens when we start project.It contains list of all products and their option for add to cart.
+     *
+     * @author Aman Sharma(amasharma@qasource.com)
+     */
+
 import React from 'react';
 import { products } from '../../../utils/const.js'
 

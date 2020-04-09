@@ -1,3 +1,13 @@
+/**
+     * 
+     * @name Route
+     *
+     * @description
+     * The route file set the routing of pages.
+     *
+     * @author Aman Sharma(amasharma@qasource.com)
+     */
+
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,6 +27,8 @@ export default class Routes extends Component {
             cartValue: localStorage.getItem('cartValue') ? JSON.parse(localStorage.getItem('cartValue')) : []
         }
     }
+
+    /* Adds item into the cart.*/
 
     addToCart = (item, id,  value = null) => {
         const { cartValue } = this.state
@@ -44,6 +56,8 @@ export default class Routes extends Component {
         })
     }
 
+    /*Delete item from the product */
+
     deleteToCart = (item, id ) => {
         const { cartValue } = this.state
         cartValue.splice([cartValue.findIndex(item => item.id === id)], 1);
@@ -54,6 +68,8 @@ export default class Routes extends Component {
             toast.success("Item Deleted Successfully");
         })
     }
+
+    /* empty the card on thankyou page */
 
     removeCart=()=>{
         this.setState({cartValue:[]})

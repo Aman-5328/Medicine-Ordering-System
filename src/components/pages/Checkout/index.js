@@ -1,3 +1,13 @@
+/**
+     * 
+     * @name Checkout Page
+     *
+     * @description
+     * This is the Checkout page. It contains the information about products added to cart along with discount coupons.
+     *
+     * @author Aman Sharma(amasharma@qasource.com)
+     */
+
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,10 +24,12 @@ class Checkout extends React.Component {
     }
   }
 
+  /* This is called when user pays */
   orderSubmitted = () => {
     this.props.history.push('/thankyou')
   }
 
+  /* This function called when user apply for coupon */
   applyCoupon = () => {
     const {discountCoupnInput} = this.state 
    if (discountCoupn.findIndex(item => item.name === discountCoupnInput) !== -1 ){
@@ -34,6 +46,8 @@ class Checkout extends React.Component {
     toast.error("Invalid coupon !");
    }
   }
+
+  /*Called when user removes the coupon*/
 
   reset = () => {
     this.setState({

@@ -1,3 +1,13 @@
+/**
+     * 
+     * @name Footer Page
+     *
+     * @description
+     * This is the Footer page of the application.
+     *
+     * @author Aman Sharma(amasharma@qasource.com)
+     */
+
 import React from 'react';
 import { Link } from "react-router-dom";
 
@@ -11,8 +21,8 @@ const Footer = () => {
                 <div className="col-sm-12">
                   <ul className="terms-privacy">
                     <li><Link to="/">Terms of Use</Link> </li>
-                    <li><Link to="/">Privecy Policy </Link> </li>
-                    <li><Link to="/">Disclaimer</Link> </li>
+                    <li><Link to="/">Privacy Policy </Link></li>
+                    <li><Link to="/">Disclaimer</Link></li>
                   </ul>
                 </div>
                 

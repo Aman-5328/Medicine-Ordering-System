@@ -1,3 +1,13 @@
+/**
+     * 
+     * @name Thankyou Page
+     *
+     * @description
+     * This is the Thankyou page. It opens up when user makes the payment.
+     *
+     * @author Aman Sharma(amasharma@qasource.com)
+     */
+
 import React from 'react';
 
 class Thankyou extends React.Component {

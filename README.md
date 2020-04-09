@@ -77,3 +77,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 6) Below is the discount coupon option. I have created 2 coupons "zomato30" and "zomato50" which gives 30 percent and 50 % discount.
 7) You can also remove the coupon.
 8) On click of "pay by cash" button, you will be redirected to thankyou page and cart will clear. 
+9) For add to cart functionality, we are using the local storage for data management. Instead we can also use redux for state management.But right now we are using local storage.
