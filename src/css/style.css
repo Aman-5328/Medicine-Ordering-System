@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* site css */
+.cs-header{
+  background-color: #343a40;
+
+} 
+
+
+footer{
+  width: 100%;
+  background-color: #343a40;
+  padding:15px 0;
+}
+.footer-bottom .terms-privacy {
+ padding: 0;
+ list-style: none;
+ text-align: center;
+}
+
+.footer-bottom .terms-privacy li {
+display: inline-block;
+}
+
+.footer-bottom .terms-privacy li a{
+ color: #fff;
+ padding: 0 10px;
+ text-decoration: none;
+}
+
+.footer-bottom p{   
+   text-align: center;
+ color: #f4f4f4;
+ font-size: 14px;
+ margin-bottom: 0;
+ border-top: 1px solid #ffffff2e;
+ padding-top: 20px;
+}
+
+
+.product-image-wrapper {
+ border: 1px solid #F7F7F5;
+ overflow: hidden;
+ margin-bottom: 30px;
+}
+.single-products {
+ position: relative;
+}
+.productinfo {
+ position: relative;
+}
+
+.productinfo img {
+ width: 100%;
+}
+.productinfo h2 {
+ color: #0E2A36;
+ font-size: 24px;
+ font-weight: 700;
+ margin-top: 15px;
+}
+.productinfo p {
+ font-size: 14px;
+ font-weight: 400;
+ color: #696763;
+}
+.btn.add-to-cart {
+ background: #3B5763;
+ border: 0 none;
+ border-radius: 0;
+ color: #fff;
+ font-size: 15px;
+ margin-bottom: 25px;
+}
+
+.btn.add-to-cart:hover{
+ color: #fff;
+}
+
+section.main-wrapper{
+ padding:40px 0;
+}
+
+.cart-btn {
+ width: 30px;
+ height: 30px;
+ background: #fff;
+ border-radius: 100%;
+ line-height: 30px;
+ padding: 0 !important;
+ text-align: center;
+ display: inline-block;
+}
+
+i.iocn-ui {
+ display: inline-block;
+ width: 20px;
+ margin: auto;
+ position: relative;
+}
+i.iocn-ui img{
+ width:100%;
+}
+
+span.counter {
+ color: #de2e2e;
+ font-weight: bold;
+ position: absolute;
+ top: -3px;
+}
+
+
+
+
